@@ -1,0 +1,135 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./IMG/Alura.png);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10%;
+    padding: 3%;
+    width: 80%;
+    height: 90%; /* Ajusta la altura de la container para que ocupe la mitad de la pantalla */
+    background-color: white;
+    border-radius: 1%;
+    box-shadow: 0 0 1% rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    opacity: 95%;
+}
+
+.left-panel, .right-panel {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+}
+
+.left-panel {
+    flex: 3; /* Ajusta el ancho del left-panel */
+}
+
+.right-panel {
+    flex: 1; /* Ajusta el ancho del right-panel */
+    align-items: center;
+    margin-top: 0;
+    padding: 6%;
+}
+
+textarea {
+    width: 100%;
+    height: 60%; /* Ajusta la altura del textarea */
+    padding: 2%;
+    border: 0.3em solid rgb(7, 7, 67); /* Ajuste de la unidad del borde */
+    border-radius: 5%;
+    resize: none;
+    font-size: 100%;
+    margin-bottom: 2%;
+}
+
+.left-panel p {
+    font-size: 75%;
+    background-color: #003366;
+    color: white;
+    padding: 0.5%;
+    
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+button {
+    padding: 2% 5%;
+    border: none;
+    border-radius: 0.4%;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+#encryptBtn {
+    background-color: #003366;
+    color: white;
+}
+
+#decryptBtn {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.output-container {
+    background-color: #f0f0f0;
+    border: 0.3em solid rgb(7, 7, 67); /* Ajuste de la unidad del borde */
+    border-radius: 5%;
+    padding: 2%;
+    width: 100%;
+    height: 60%; /* Ajusta la altura del contenedor de salida */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+#outputText {
+    color: #666;
+    font-size: 100%;
+    text-align: center;
+    border: 1px solid #ccc; /* Añadir borde al texto de salida */
+    padding: 1%;
+    border-radius: 0.4%;
+}
+
+#remitBtn {
+    background-color: #003366;
+    color: white;
+    margin-top: 2%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto; /* Ajusta la altura del contenedor en dispositivos móviles */
+    }
+
+    .left-panel, .right-panel {
+        width: 100%;
+        height: auto; /* Ajusta la altura de los paneles en dispositivos móviles */
+    }
+
+    textarea, .output-container {
+        height: auto; /* Ajusta la altura de los textarea y contenedor de salida en dispositivos móviles */
+    }
+}

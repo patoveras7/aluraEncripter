@@ -1,0 +1,31 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("../IMG/Alura.png");
+}
+
+.container {
+    text-align: center;
+}
+
+/* Estilos del botón */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 38px;
+    background-color: #003366;
+    color: white;
+    border: white 0.5em solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #001f4d;
+}
