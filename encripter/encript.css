@@ -20,7 +20,7 @@ body {
     margin: 10%;
     padding: 3%;
     width: 80%;
-    height: 90%; /* Ajusta la altura de la container para que ocupe la mitad de la pantalla */
+    height: 90%; 
     background-color: white;
     border-radius: 1%;
     box-shadow: 0 0 1% rgba(0, 0, 0, 0.1);
@@ -37,11 +37,11 @@ body {
 }
 
 .left-panel {
-    flex: 3; /* Ajusta el ancho del left-panel */
+    flex: 3; 
 }
 
 .right-panel {
-    flex: 1; /* Ajusta el ancho del right-panel */
+    flex: 1; 
     align-items: center;
     margin-top: 0;
     padding: 6%;
@@ -49,9 +49,9 @@ body {
 
 textarea {
     width: 100%;
-    height: 60%; /* Ajusta la altura del textarea */
+    height: 60%; 
     padding: 2%;
-    border: 0.3em solid rgb(7, 7, 67); /* Ajuste de la unidad del borde */
+    border: 0.3em solid rgb(7, 7, 67); 
     border-radius: 5%;
     resize: none;
     font-size: 100%;
@@ -92,11 +92,11 @@ button {
 
 .output-container {
     background-color: #f0f0f0;
-    border: 0.3em solid rgb(7, 7, 67); /* Ajuste de la unidad del borde */
+    border: 0.3em solid rgb(7, 7, 67); 
     border-radius: 5%;
     padding: 2%;
     width: 100%;
-    height: 60%; /* Ajusta la altura del contenedor de salida */
+    height: 60%; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,7 +107,7 @@ button {
     color: #666;
     font-size: 100%;
     text-align: center;
-    border: 1px solid #ccc; /* Añadir borde al texto de salida */
+    border: 1px solid #ccc; 
     padding: 1%;
     border-radius: 0.4%;
 }
@@ -121,15 +121,40 @@ button {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        height: auto; /* Ajusta la altura del contenedor en dispositivos móviles */
+        width: 100%; 
+        padding: 2%;
     }
 
     .left-panel, .right-panel {
         width: 100%;
-        height: auto; /* Ajusta la altura de los paneles en dispositivos móviles */
+        height: auto;
+        padding: 5%; 
     }
 
     textarea, .output-container {
-        height: auto; /* Ajusta la altura de los textarea y contenedor de salida en dispositivos móviles */
+        height: auto; 
+        font-size: 1rem; 
+    }
+
+    .buttons {
+        flex-direction: column; 
+    }
+
+    button {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1%;
+    }
+
+    .left-panel p {
+        font-size: 0.65rem; 
+    }
+
+    button {
+        padding: 8px 16px; 
     }
 }
